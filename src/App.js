@@ -11,7 +11,7 @@ function App() {
     setError('');
     setDownloading(true);
     try {
-      const response = await fetch('http://localhost:4000/api/download', {
+      const response = await fetch('https://video-downloader-backend-dwpk.onrender.com/api/download', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
